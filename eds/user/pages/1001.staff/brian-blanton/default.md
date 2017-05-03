@@ -1,5 +1,6 @@
 ---
 title: 'Brian Blanton'
+body_classes: single-staff
 snippet: 'RENCI’s director of environmental initiatives and a coastal oceanographer with 15+ years of experience in coastal hazards and risk assessment, high performance computing, and earth sciences data analysis. He co-leads the Environmental Sciences group with Ray Idaszak, building connections between water-themed sciences and applications through sustainable software development and data management practices. His research usually involves applications of the storm-surge and wind-wave model ADCIRC, for problems such as how the Federal Emergency Management Agency computes coastal floodplain statistics, rapid statistical forecasting of storm surge, and risk-based coastal evacuation routing.'
 position: 'Director of Environmental Initiatives and Coastal Oceanographer'
 ---

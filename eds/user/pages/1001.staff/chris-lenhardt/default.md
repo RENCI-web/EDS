@@ -1,5 +1,6 @@
 ---
 title: 'Chris Lenhardt'
+body_classes: single-staff
 ---
 
 # Chris Lenhardt
