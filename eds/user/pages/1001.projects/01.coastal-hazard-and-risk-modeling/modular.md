@@ -1,5 +1,15 @@
 ---
 title: 'Coastal Hazard and Risk Modeling'
+content:
+    items: '@self.modular'
+    order:
+        by: default
+        dir: asc
+        custom:
+            - _chrm
+taxonomy:
+    tag:
+        - featuredproject
 ---
 
 # Coastal Hazard and Risk Modeling

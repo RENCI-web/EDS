@@ -1,5 +1,9 @@
 ---
 title: 'Brian Blanton'
+taxonomy:
+    tag:
+        - chrmstaff
+        - gscstaff
 body_classes: single-staff
 snippet: 'RENCI’s director of environmental initiatives and a coastal oceanographer with 15+ years of experience in coastal hazards and risk assessment, high performance computing, and earth sciences data analysis. He co-leads the Environmental Sciences group with Ray Idaszak, building connections between water-themed sciences and applications through sustainable software development and data management practices. His research usually involves applications of the storm-surge and wind-wave model ADCIRC, for problems such as how the Federal Emergency Management Agency computes coastal floodplain statistics, rapid statistical forecasting of storm surge, and risk-based coastal evacuation routing.'
 position: 'Director of Environmental Initiatives and Coastal Oceanographer'
@@ -13,9 +17,9 @@ position: 'Director of Environmental Initiatives and Coastal Oceanographer'
 
 ===
 
-RENCI’s director of environmental initiatives and a coastal oceanographer with 15+ years of experience in coastal hazards and risk assessment, high performance computing, and earth sciences data analysis. He co-leads the Environmental Sciences group with Ray Idaszak, building connections between water-themed sciences and applications through sustainable software development and data management practices. His research usually involves applications of the storm-surge and wind-wave model ADCIRC, for problems such as how the Federal Emergency Management Agency computes coastal floodplain statistics, rapid statistical forecasting of storm surge, and risk-based coastal evacuation routing. He is also leading RENCI’s efforts in bridging the gap between academic research and industrial applications through NSF’s Industry/University Cooperative Research Centers program. He earned a PhD (2003) in Marine Sciences from the University of North Carolina at Chapel Hill, and a BS (1991) in mathematics from Armstrong State College in Savannah, Georgia.
+![](BrianBlanton2%20EDS.jpg?classes=staff-image)RENCI’s director of environmental initiatives and a coastal oceanographer with 15+ years of experience in coastal hazards and risk assessment, high performance computing, and earth sciences data analysis. He co-leads the Environmental Sciences group with Ray Idaszak, building connections between water-themed sciences and applications through sustainable software development and data management practices. His research usually involves applications of the storm-surge and wind-wave model ADCIRC, for problems such as how the Federal Emergency Management Agency computes coastal floodplain statistics, rapid statistical forecasting of storm surge, and risk-based coastal evacuation routing. He is also leading RENCI’s efforts in bridging the gap between academic research and industrial applications through NSF’s Industry/University Cooperative Research Centers program. He earned a PhD (2003) in Marine Sciences from the University of North Carolina at Chapel Hill, and a BS (1991) in mathematics from Armstrong State College in Savannah, Georgia.
 
-![](BrianBlanton2%20EDS.jpg)
+---
 
 **Project:** A multi-tiered ADCIRC-based storm surge and wave prediction system
 

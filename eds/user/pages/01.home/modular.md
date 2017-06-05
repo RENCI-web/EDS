@@ -1,7 +1,5 @@
 ---
 title: Home
-body_classes: 'modular header-image fullwidth'
-onpage_menu: true
 content:
     items: '@self.modular'
     order:
@@ -9,5 +7,9 @@ content:
         dir: asc
         custom:
             - _about
+            - _projectssection
+body_classes: 'modular header-image fullwidth'
+visible: false
+onpage_menu: true
 ---
 

@@ -1,5 +1,15 @@
 ---
 title: 'Galapagos Science Center'
+content:
+    items: '@self.modular'
+    order:
+        by: default
+        dir: asc
+        custom:
+            - _gscstaff
+taxonomy:
+    tag:
+        - featuredproject
 ---
 
 # Galapagos Science Center

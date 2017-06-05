@@ -1,7 +1,7 @@
 ---
 title: Projects
 content:
-    items: '@self.children'
+    items: "@self.children"
     order:
         by: date
         dir: desc

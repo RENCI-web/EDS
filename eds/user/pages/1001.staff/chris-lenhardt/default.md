@@ -1,5 +1,8 @@
 ---
 title: 'Chris Lenhardt'
+taxonomy:
+    tag:
+        - gscstaff
 body_classes: single-staff
 ---
 
@@ -11,9 +14,8 @@ body_classes: single-staff
 
 ===
 
-**Contact Information**
+![](ChrisLenhardt%20EDS.jpg?classes=staff-image)**Contact Information**
 
 Telephone [919-445-0480](tel:1-919-445-0480)
-Email [clenhardt@renci.org](mailto:clenhardt@renci.org)
 
-![](ChrisLenhardt%20EDS.jpg)
+Email [clenhardt@renci.org](mailto:clenhardt@renci.org)
