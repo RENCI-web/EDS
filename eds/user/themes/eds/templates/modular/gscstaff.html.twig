@@ -1,0 +1,17 @@
+<?php  ?>
+<h1>Galapagos Science Center Staff</h1>
+<hr/>
+<div id="featured-staff-section">
+	<div class="featured-staff-wrap">
+		{% for post in taxonomy.findTaxonomy({'tag':'chrmstaff'}) %}
+		    <div class="featured-staff"><a href="{{ post.url }}">
+		    	<div class="featured-image-wrap">
+				{% for image in post.media.images %}
+				  {{ image.html }}
+				{% endfor %}
+				</div>
+				<h3>{{ post.title }}</h3>
+			</a></div>
+		{% endfor %}
+	</div>
+</div>

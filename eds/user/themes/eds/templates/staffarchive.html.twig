@@ -1,0 +1,13 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    {{ page.content }}
+    {% for p in page.collection %}
+		<div class="staff-summary">
+			{% for image in p.media.images %}
+			   {{ image.html }}
+			{% endfor %}
+			<a href="{{ p.url }}">{{ p.summary }}</a>
+		</div>
+	{% endfor %}
+{% endblock %}

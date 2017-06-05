@@ -1,0 +1,16 @@
+<?php  ?>
+<div class="modular-row projects">
+	{{ content }}
+	<div class="featured-project-wrap">
+		{% for post in taxonomy.findTaxonomy({'tag':'featuredproject'}) %}
+		    <div class="featured-project"><a href="{{ post.url }}">
+		    	<div class="featured-image-wrap">
+				{% for image in post.media.images %}
+				  {{ image.html }}
+				{% endfor %}
+				</div>
+				<h3>{{ post.title }}</h3>
+			</a></div>
+		{% endfor %}
+	</div>
+</div>
