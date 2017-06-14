@@ -1,7 +1,8 @@
 /* EDS Base */
 body#top {
   font-family: 'Open Sans', sans-serif;
-  color: #6D6D6D; }
+  color: #6D6D6D;
+  margin: 0; }
   body#top .wrapper {
     max-width: 1260px;
     margin: 0 auto;
