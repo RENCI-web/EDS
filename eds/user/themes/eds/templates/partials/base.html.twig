@@ -25,6 +25,7 @@
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
         {% do assets.addJs('theme://js/mobilenav.js') %}
+        {% do assets.addJs('theme://js/homeremoveclass.js') %}
     {% endblock %}
     {{ assets.js() }}
 

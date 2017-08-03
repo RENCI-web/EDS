@@ -1,12 +1,15 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content }}
-    {% for p in page.collection %}
-		<a href="{{ p.url }}">
-			<div class="project-summary">
-				{{ p.summary }}
+	<div class="restricted project-archive">
+	    {{ page.content }}
+	    {% for p in page.collection %}
+	    	<div class="project-single-wrap">
+				<a href="{{ p.url }}"><h3>{{ p.title }}</h3></a>
+				<div class="project-summary">
+					{{ p.header.snippet }}
+				</div>
 			</div>
-		</a>
-	{% endfor %}
+		{% endfor %}
+	</div>
 {% endblock %}

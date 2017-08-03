@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<div class="restricted data-archive">
+	    {{ page.content }}
+	    {% for p in page.collection %}
+	    	<div class="data-single-wrap">
+				<a href="{{ p.url }}"><h3>{{ p.title }}</h3></a>
+				<div class="data-set-summary">
+					{{ p.header.snippet }}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

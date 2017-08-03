@@ -4,19 +4,22 @@ body#top {
   color: #6D6D6D;
   margin: 0; }
   body#top .wrapper {
-    max-width: 1260px;
     margin: 0 auto;
     overflow: auto; }
   body#top a {
-    color: #6D6D6D; }
+    color: #5C97BF;
+    font-weight: 700; }
 
 #top .header {
   background-color: #232323;
   overflow: auto; }
   #top .header .logo img {
-    width: 550px; }
+    width: 550px;
+    margin-left: 10px; }
   #top .header .padding {
     padding: 1rem 0 0 0; }
+  #top .header .wrapper {
+    max-width: 1260px; }
 
 #top .footer {
   width: 100%;
@@ -47,7 +50,6 @@ body#top {
     background-color: #232323 !important; }
 
 #body {
-  border: solid 4px #5C97BF;
   background: url("../images/map_background.png");
   background-repeat: no-repeat; }
   #body h1, #body h2, #body h3, #body h4, #body h5, #body h6 {
@@ -67,71 +69,105 @@ body#top {
   #body img {
     float: left;
     width: 35%;
-    margin-right: 14px; }
+    margin-right: 24px; }
+
+/* Removes Modular Title Siblings */
+h1.mod-title ~ .mod-title {
+  display: none; }
+
+hr.mod-line ~ .mod-line {
+  display: none; }
+
+h1.mod-title-pub ~ .mod-title-pub {
+  display: none; }
+
+hr.mod-line-pub ~ .mod-line-pub {
+  display: none; }
+
+h1.mod-title-staff ~ .mod-title-staff {
+  display: none; }
+
+hr.mod-line-staff ~ .mod-line-staff {
+  display: none; }
+
+/* Full Width for Small Paragraph */
+.full-width-wrap {
+  min-height: 281px; }
 
 /* News Archive */
-#body .news-summary {
+#body .news-archive-wrap {
   overflow: auto;
-  margin-top: 20px !important;
-  width: 60%;
-  margin: 0 auto; }
-  #body .news-summary h1, #body .news-summary h2, #body .news-summary h3, #body .news-summary h4, #body .news-summary h5, #body .news-summary h6 {
+  margin-top: 20px !important; }
+  #body .news-archive-wrap h1, #body .news-archive-wrap h2, #body .news-archive-wrap h3, #body .news-archive-wrap h4, #body .news-archive-wrap h5, #body .news-archive-wrap h6 {
     text-align: left; }
-  #body .news-summary h1 {
-    font-size: 1.3em; }
-  #body .news-summary img {
+  #body .news-archive-wrap img {
     max-width: 200px;
     float: left;
     margin-right: 20px; }
+  #body .news-archive-wrap .news-summary {
+    width: 75%;
+    float: left; }
+    #body .news-archive-wrap .news-summary h3 {
+      margin-top: 0; }
 
-#body .staff-summary {
-  overflow: auto;
-  margin-top: 20px !important;
-  width: 60%;
-  margin: 0 auto; }
-  #body .staff-summary h1, #body .staff-summary h2, #body .staff-summary h3, #body .staff-summary h4, #body .staff-summary h5, #body .staff-summary h6 {
-    text-align: left; }
-  #body .staff-summary h1 {
-    font-size: 1.3em; }
-  #body .staff-summary img {
-    max-width: 200px;
-    float: left;
-    margin-right: 20px; }
+/* Staff Archive Page */
+#top #body .staff-archive hr {
+  margin-bottom: 22px; }
+#top #body .staff-archive .staff-single-wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 28px; }
+  #top #body .staff-archive .staff-single-wrap img {
+    width: 25%;
+    text-align: right;
+    padding-right: 4%;
+    border-right: solid 4px #5C97BF; }
+  #top #body .staff-archive .staff-single-wrap .staff-summary {
+    width: 80%;
+    padding-left: 2%; }
+    #top #body .staff-archive .staff-single-wrap .staff-summary h3 {
+      margin-top: 0; }
 
-#body .project-summary {
-  overflow: auto;
-  margin-top: 20px !important;
-  width: 60%;
-  margin: 0 auto; }
-  #body .project-summary h1, #body .project-summary h2, #body .project-summary h3, #body .project-summary h4, #body .project-summary h5, #body .project-summary h6 {
-    text-align: left; }
-  #body .project-summary h1 {
-    font-size: 1.3em; }
-  #body .project-summary img {
-    max-width: 200px;
-    float: left;
-    margin-right: 20px; }
+/* Publication Archive Page */
+#top #body .publication-summary {
+  border-bottom: solid 1px #CCC; }
+  #top #body .publication-summary h3 {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 22px 0; }
 
-#body .publication-summary {
-  overflow: auto;
-  width: 60%;
-  margin: 0 auto; }
-  #body .publication-summary h1, #body .publication-summary h2, #body .publication-summary h3, #body .publication-summary h4, #body .publication-summary h5, #body .publication-summary h6 {
-    text-align: left; }
-  #body .publication-summary img {
-    max-width: 200px;
-    float: left;
-    margin-right: 20px; }
+/* Project Archive Page */
+#top #body .project-archive hr {
+  margin-bottom: 22px; }
+#top #body .project-archive .project-single-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px; }
+  #top #body .project-archive .project-single-wrap a {
+    width: 30%;
+    text-align: right;
+    padding-right: 2%;
+    border-right: solid 4px #5C97BF; }
+  #top #body .project-archive .project-single-wrap .project-summary {
+    width: 70%;
+    padding-left: 2%; }
 
 /* Modular Page */
 .modular #body .wrapper {
   padding: 0; }
 
+#top #body .restricted {
+  max-width: 960px;
+  margin: 0 auto; }
+
 /* About Modular Page */
 .about {
   overflow: auto;
   height: 100%;
-  padding: 0 5%; }
+  padding: 0 5%;
+  max-width: 1260px;
+  margin: 0 auto; }
   .about h2 {
     text-align: center; }
   .about ol {
@@ -159,12 +195,15 @@ body#top {
 /* Projects Modular */
 #body .projects {
   overflow: auto;
-  padding: 0 5% 5px;
-  background: #5c97bf;
+  padding: 0 10% 5px;
+  background: url("../images/project_bg.png");
+  background-size: cover;
+  background-position: center;
   margin-top: 44px; }
   #body .projects h2 {
     color: #eaeaea;
-    text-align: center; }
+    text-align: center;
+    padding-top: 40px; }
   #body .projects hr {
     border-style: ridge;
     border-color: #eaeaea; }
@@ -216,6 +255,22 @@ body#top {
   .single-staff #body p {
     overflow: auto;
     text-align: left; }
+
+/* Data Set Archive */
+#top #body .data-archive hr {
+  margin-bottom: 22px; }
+#top #body .data-archive .data-single-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px; }
+  #top #body .data-archive .data-single-wrap a {
+    width: 30%;
+    text-align: right;
+    padding-right: 2%;
+    border-right: solid 4px #5C97BF; }
+  #top #body .data-archive .data-single-wrap .data-set-summary {
+    width: 70%;
+    padding-left: 2%; }
 
 /* Responsive Mods */
 @media only screen and (max-width: 1209px) {

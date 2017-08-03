@@ -1,9 +1,11 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content }}
-    {% for module in page.collection() %}
-        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
-        {{ module.content }}
-    {% endfor %}
+	<div id="single" class="restricted">
+	    {{ page.content }}
+	    {% for module in page.collection() %}
+	        <div id="{{ _self.pageLinkName(module.menu) }}"></div>
+	        {{ module.content }}
+	    {% endfor %}
+	</div>
 {% endblock %}

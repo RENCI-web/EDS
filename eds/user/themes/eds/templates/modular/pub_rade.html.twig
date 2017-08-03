@@ -1,0 +1,17 @@
+<?php  ?>
+{% for post in taxonomy.findTaxonomy({'tag':'pub_rade'}) %}
+    {% if taxonomy.findTaxonomy({'tag':'pub_rade'}) is empty %}
+        <div></div>
+    {% else %}
+		<h1 class="mod-title-pub">Publications</h1>
+		<hr class="mod-line-pub" />
+	{% endif %}
+{% endfor %}
+<div class="restricted">
+	{% for post in taxonomy.findTaxonomy({'tag':'pub_rade'}) %}
+	    <div class="publication-summary"><a href="{{ post.url }}">
+			<h3>{{ post.title }}</h3>
+		</a></div>
+	{% endfor %}
+</div>
+

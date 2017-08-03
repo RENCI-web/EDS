@@ -5,25 +5,27 @@ body#top {
     color: #6D6D6D;
     margin: 0;
     .wrapper {
-	    max-width: 1260px;
 	    margin: 0 auto;
 	    overflow: auto;
 	}
     a {
-	color: #6D6D6D;
+	    color: #5C97BF;
+    	font-weight: 700;
 	}
 }
-
-{}
 
 #top .header {
     background-color: #232323;
     overflow: auto;
     .logo img {
     	width: 550px;
+    	margin-left: 10px;
     }
     .padding {
     	padding: 1rem 0 0 0;
+    }
+    .wrapper {
+    	max-width: 1260px;
     }
 }
 
@@ -66,7 +68,7 @@ body#top {
 }
 
 #body { 
-	border: solid 4px #5C97BF;
+	// border: solid 4px #5C97BF;
 	background: url('../images/map_background.png');
 	background-repeat: no-repeat;
 	h1, h2, h3, h4, h5, h6 {
@@ -90,77 +92,134 @@ body#top {
 	img {
 		float: left;
 		width: 35%;
-		margin-right: 14px;
+		margin-right: 24px;
 	}
+}
+
+/* Removes Modular Title Siblings */
+
+h1.mod-title ~ .mod-title {
+	display: none;
+}
+
+hr.mod-line ~ .mod-line {
+    display: none;
+}
+
+h1.mod-title-pub ~ .mod-title-pub {
+	display: none;
+}
+
+hr.mod-line-pub ~ .mod-line-pub {
+    display: none;
+}
+
+h1.mod-title-staff ~ .mod-title-staff {
+	display: none;
+}
+
+hr.mod-line-staff ~ .mod-line-staff {
+    display: none;
+}
+
+/* Full Width for Small Paragraph */
+
+.full-width-wrap {
+    min-height: 281px;
 }
 
 /* News Archive */
 
-#body .news-summary {
+#body .news-archive-wrap {
 	overflow: auto;
 	margin-top: 20px !important;
-    width: 60%;
-    margin: 0 auto;
 	h1, h2, h3, h4, h5, h6 {
 		text-align: left;
-	}
-	h1 {
-		font-size: 1.3em;
 	}
 	img {
 		max-width: 200px;
 		float: left;
 		margin-right: 20px;
+	}
+	.news-summary {
+		width: 75%;
+		float: left;
+		h3 {
+			margin-top: 0;
+		}
 	}
 }
 
-#body .staff-summary {
-	overflow: auto;
-	margin-top: 20px !important;
-    width: 60%;
-    margin: 0 auto;
-	h1, h2, h3, h4, h5, h6 {
-		text-align: left;
-	}
-	h1 {
-		font-size: 1.3em;
-	}
-	img {
-		max-width: 200px;
-		float: left;
-		margin-right: 20px;
+/* Staff Archive Page */
+
+#top {
+	#body {
+		.staff-archive {
+			hr {
+				margin-bottom: 22px;
+			}
+			.staff-single-wrap {
+				display: flex;
+	    		align-items: flex-start;
+	    		margin-bottom: 28px;
+				img {
+					width: 25%;
+				    text-align: right;
+				    padding-right: 4%;
+				    border-right: solid 4px #5C97BF;
+				}
+				.staff-summary {
+					width: 80%;
+				    padding-left: 2%;
+				    h3 {
+				    	margin-top: 0;
+				    }
+				}
+			}
+		}
 	}
 }
 
-#body .project-summary {
-	overflow: auto;
-	margin-top: 20px !important;
-    width: 60%;
-    margin: 0 auto;
-	h1, h2, h3, h4, h5, h6 {
-		text-align: left;
-	}
-	h1 {
-		font-size: 1.3em;
-	}
-	img {
-		max-width: 200px;
-		float: left;
-		margin-right: 20px;
+/* Publication Archive Page */
+
+#top {
+	#body {
+		.publication-summary {
+			border-bottom: solid 1px #CCC;
+			h3 {
+				max-width: 700px;
+				text-align: center;
+				margin: 0 auto;
+				padding: 22px 0;
+			}
+		}
 	}
 }
 
-#body .publication-summary {
-	overflow: auto;
-    width: 60%;
-    margin: 0 auto;
-	h1, h2, h3, h4, h5, h6 {
-		text-align: left;
-	}
-	img {
-		max-width: 200px;
-		float: left;
-		margin-right: 20px;
+/* Project Archive Page */
+
+#top {
+	#body {
+		.project-archive {
+			hr {
+				margin-bottom: 22px;
+			}
+			.project-single-wrap {
+				display: flex;
+	    		align-items: center;
+	    		margin-bottom: 28px;
+				a {
+					width: 30%;
+				    text-align: right;
+				    padding-right: 2%;
+				    border-right: solid 4px #5C97BF;
+				}
+				.project-summary {
+					width: 70%;
+				    padding-left: 2%;
+				}
+			}
+		}
 	}
 }
 
@@ -174,12 +233,23 @@ body#top {
 	}
 }
 
+#top {
+	#body {
+		.restricted {
+			max-width: 960px;
+			margin: 0 auto;
+		}
+	}
+}
+
 /* About Modular Page */
 
 .about {
 	overflow: auto;
 	height: 100%;
 	padding: 0 5%;
+    max-width: 1260px;
+    margin: 0 auto;
 	h2 {
 		text-align: center;
 	}
@@ -219,12 +289,15 @@ body#top {
 
 #body .projects {
 	overflow: auto;
-    padding: 0 5% 5px;
-    background: rgb(92, 151, 191);
+    padding: 0 10% 5px;
+    background: url('../images/project_bg.png');
+    background-size: cover;
+    background-position: center;
     margin-top: 44px;
     h2 {
     	color: #eaeaea;
     	text-align: center;
+    	padding-top: 40px;
     }
     hr {
     	border-style: ridge;
@@ -293,6 +366,33 @@ body#top {
 		p {
 			overflow: auto;
 			text-align: left;
+		}
+	}
+}
+
+/* Data Set Archive */
+
+#top {
+	#body {
+		.data-archive {
+			hr {
+				margin-bottom: 22px;
+			}
+			.data-single-wrap {
+				display: flex;
+	    		align-items: center;
+	    		margin-bottom: 28px;
+				a {
+					width: 30%;
+				    text-align: right;
+				    padding-right: 2%;
+				    border-right: solid 4px #5C97BF;
+				}
+				.data-set-summary {
+					width: 70%;
+				    padding-left: 2%;
+				}
+			}
 		}
 	}
 }
