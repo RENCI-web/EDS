@@ -8,6 +8,9 @@ content:
         custom:
             - _project_pub_4
             - _staff_pub_4
+taxonomy:
+    tag:
+        - pub_gsc
 ---
 
 # Cross-Institutional Research Cyberinfrastructure for Data Intensive Science. 2016 IEEE High Performance Extreme Computing Conference (HPEC’16)

@@ -13,6 +13,7 @@ taxonomy:
         - staff_gsc
         - staff_pub_3
         - staff_rade
+        - staff_ncffp
 body_classes: single-staff
 position: 'Domain Scientist, Environmental Data Science and Systems'
 snippet: 'Twenty years managing the integration of information technology and data stewardship best practices to support the science enterprise; data center operations management, digital archiving, metadata standards, application of leading edge information technology, sociology of science data management.'
